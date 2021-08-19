@@ -93,7 +93,7 @@ func inverseMatrix(A [][]float64) ([][]float64, error) {
 	return inverse, nil
 }
 
-func multiplyMatrices(m1 [][]float64, m2 [][]float64) ([][]float64, error) {
+func multiplyMatrices2(m1 [][]float64, m2 [][]float64) ([][]float64, error) {
 	if len(m1[0]) != len(m2) {
 		return nil, errors.New("Cannot multiply the given matrices!")
 	}
@@ -154,7 +154,7 @@ func main() {
 		fmt.Println()
 	}
 	fmt.Println("\t\t\tPrinting result!")
-	r1, err := multiplyMatrices(m1, inverse)
+	r1, err := multiplyMatrices2(m1, inverse)
 	if err != nil {
 		fmt.Println(err)
 		return
