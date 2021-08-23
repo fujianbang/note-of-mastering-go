@@ -9,13 +9,13 @@ import (
 type t1 int
 type t2 int
 
-type aa struct {
+type a2 struct {
 	X    int
 	Y    float64
 	Text string
 }
 
-func (a1 aa) compareStruct(a2 aa) bool {
+func (a1 a2) compareStruct(a2 a2) bool {
 	r1 := reflect.ValueOf(&a1).Elem()
 	r2 := reflect.ValueOf(&a2).Elem()
 
@@ -48,8 +48,8 @@ func main() {
 	r := reflect.New(reflect.ValueOf(&p).Type()).Elem()
 	fmt.Printf("The type of r is %s\n", reflect.TypeOf(r))
 
-	a1 := aa{1, 2.1, "A1"}
-	a2 := aa{1, -2, "A2"}
+	a1 := a2{1, 2.1, "A1"}
+	a2 := a2{1, -2, "A2"}
 
 	if a1.compareStruct(a2) {
 		fmt.Println("Equal!")
