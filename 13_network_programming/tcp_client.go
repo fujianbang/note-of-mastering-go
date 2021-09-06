@@ -23,7 +23,7 @@ func main() {
 	}
 	for {
 		reader := bufio.NewReader(os.Stdin)
-		fmt.Print(">>")
+		fmt.Print(">> ")
 		text, _ := reader.ReadString('\n')
 		fmt.Fprintf(c, text+"\n")
 		message, _ := bufio.NewReader(c).ReadString('\n')
