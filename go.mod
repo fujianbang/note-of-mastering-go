@@ -14,4 +14,5 @@ require (
 	github.com/pkg/profile v1.6.0
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.8.1
+	gonum.org/v1/gonum v0.9.3 // indirect
 )
