@@ -14,6 +14,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/reflectwalk v1.0.2
 	github.com/pkg/profile v1.6.0
+	github.com/sjwhitworth/golearn v0.0.0-20210906182158-947ee7214ee5 // indirect
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.8.1
 	golang.org/x/text v0.3.7 // indirect
